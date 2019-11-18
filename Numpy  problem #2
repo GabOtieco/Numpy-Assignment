@@ -1,0 +1,8 @@
+import numpy as np
+
+x = np.arange(1,101,1)
+y = np.reshape(x,(10,10))
+z = y * y
+a = z%3
+b = z[a==0]
+print(b)
